@@ -3,7 +3,7 @@
 %forgemeta
 
 Name:    poppencast-salt-formula-firewalld
-Version: 0.0.2
+Version: 0.0.3
 Release: 1%{?dist}
 Summary: SaltStack formula for firewalld
 
@@ -42,6 +42,9 @@ cp -R --no-dereference --preserve=mode,links -v firewalld %{buildroot}%{_datadir
 %license LICENSE
 
 %changelog
+* Wed Apr 17 2024 Ewout van Mansom <ewout@vanmansom.name> 0.0.3-1
+- feat(rpm): normalize path even more (ewout@vanmansom.name)
+
 * Wed Apr 17 2024 Ewout van Mansom <ewout@vanmansom.name> 0.0.2-1
 - feat(rpm): normalize installation path (ewout@vanmansom.name)
 
