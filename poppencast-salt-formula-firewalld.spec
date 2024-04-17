@@ -1,5 +1,5 @@
 %global forgeurl https://github.com/PoppenCast/firewalld-formula
-%global tag poppencast-salt-formula-firewalld-0.0.2-1
+%global tag poppencast-salt-formula-firewalld-0.0.3-1
 %forgemeta
 
 Name:    poppencast-salt-formula-firewalld
@@ -30,14 +30,14 @@ SaltStack formula to set up and configure firewalld.}
 # TODO: build and testing, for now this package only "zips up"
 
 %install
-install -d -m 755 %{buildroot}%{_datadir}/salt/formulas/firewalld-formula
-cp -R --no-dereference --preserve=mode,links -v firewalld %{buildroot}%{_datadir}/salt/formulas/firewalld-formula/
+install -d -m 755 %{buildroot}%{_datadir}/salt/formulas/firewalld
+cp -R --no-dereference --preserve=mode,links -v firewalld %{buildroot}%{_datadir}/salt/formulas/firewalld/
 
 %check
 # TODO: build and testing, for now this package only "zips up"
 
 %files
-%{_datadir}/salt/formulas/firewalld-formula/
+%{_datadir}/salt/formulas/firewalld/
 %doc docs/README.rst
 %license LICENSE
 
